@@ -1,0 +1,43 @@
+header.global {
+	
+	h1.logo {
+	    @include float(left);
+	    @include margin(-21px, 39px, 0, 0); // margen del logo
+	    position: relative;
+
+	    a {
+	    	display: block;
+	    }
+    }
+
+    .primary {
+
+    	> a {
+    		@include button(simple, $button-color);
+    		//border: none;
+    		//border-radius: none;
+    		//box-shadow: none;
+    		//text-shadow: none;
+
+    	}
+    }
+
+	.nav-global {
+		li, div {
+			a {
+				color: white; // color de los links del header
+			}
+		}
+	}
+}
+
+header.global.slim {
+	h2.title {
+		color: green;
+		background-color: yellow;
+
+	    .provider {
+	    	color: white;
+    	}
+	}
+}

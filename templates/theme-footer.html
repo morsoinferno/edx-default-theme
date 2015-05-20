@@ -37,28 +37,38 @@
       </ol>
       </nav>
 
-      <div class="wrapper-logo">
-        <p>
-          <a href="/">
-            ## this is just a placeholder logo
-            ## feel free to change this logo to your own
-            <img alt="organiztion logo placeholder" src="/static/images/logo-placeholder.png">
-          </a>
-        </p>
-      </div>
 
-      <p class="copyright">${_("&copy; 2014 {platform_name}, some rights reserved").format(platform_name=settings.PLATFORM_NAME)}</p>
-        <nav class="nav-legal">
-          <ul>
-            <li class="nav-legal-01">
-              <a href="${marketing_link('TOS')}">${_("Terms of Service and Honor Code")}</a>
-            </li>
-            <li class="nav-legal-02">
-              <a href="${marketing_link('PRIVACY')}">${_("Privacy Policy")}</a>
-            </li>
-          </ul>
+
+
+      <nav class="wrapper-logo-custom">
+        <div class="wrapper-logo">
+          <p>
+            <a href="/">
+              ## this is just a placeholder logo
+              ## feel free to change this logo to your own
+              <img alt="Universidad de Santiago de Chile" src="${static.url('themes/{theme_name}/images/logos/set-imagotipo-oficial/UDS-TBCO.png'.format(theme_name=settings.THEME_NAME))}" height="80"/>
+            </a>
+          </p>
+        </div>
+        <nav class="wrapper-logo-text">
+          <p class="copyright">${_("&copy; 2014 {platform_name}, some rights reserved").format(platform_name=settings.PLATFORM_NAME)}</p>
+          <nav class="nav-legal">
+            <ul>
+              <li class="nav-legal-01">
+                <a href="${marketing_link('TOS')}">${_("Terms of Service and Honor Code")}</a>
+              </li>
+              <li class="nav-legal-02">
+                <a href="${marketing_link('PRIVACY')}">${_("Privacy Policy")}</a>
+              </li>
+            </ul>
+          </nav>
         </nav>
-    </div>
+      </nav>
+
+
+
+
+  </div>
 
     ## please leave this link and use one of the logos provided
     <div class="powered-by">

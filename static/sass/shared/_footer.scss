@@ -1,0 +1,49 @@
+.wrapper-footer {
+
+  footer {
+    // colophon
+    .colophon {
+ 
+      .nav-colophon {
+ 
+        li {
+ 
+          a {
+            color: white; //tint($black, 20%); // cambiar
+
+          }
+        }
+      }
+    }
+
+    .wrapper-logo-custom {
+        display: inline-flex;
+
+        .wrapper-logo {
+          margin: 5px 10px 0 0;//($baseline*0.75) 0 0 0;
+
+            a {
+              display: inline-block;
+
+              &:hover {
+                border-bottom: 0;
+              }
+            }
+        }
+        .wrapper-logo-text {
+          margin-top: 20px;
+
+          .copyright {
+          color: white; // $gray-l2; // cambiar
+          }
+
+          .nav-legal {
+            a {
+              color: white;
+            }
+          }
+        }
+    }
+  }
+}
+

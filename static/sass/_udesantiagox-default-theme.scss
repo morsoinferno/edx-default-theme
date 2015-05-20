@@ -9,14 +9,18 @@
 //  Color variables (from Stanford palette unless noted)
 //-----------------
 
+//Colores USACH
+$naranja-usach: #e95b2b;
+$azul-usach: #083c87;
+
 //Main Color Variables
-$main-color: #f7691f;
+$main-color: $naranja-usach; //#f7691f;
 $dark-color: #ea281f; //Link Color
 $light-color: #f4e00c; //Selected Header BG Color, ie. calendar        ***Custom, not from palette***
 $bg-color: #f7fe81; //Selected Content BG Color, ie. calendar          ***Custom, not from palette***
 
 //Main BG Color Variables
-$main-bg: #822537;
+$main-bg: $azul-usach; //#822537;
 $main-bg-60: lighten($main-bg, 18.5%); //Main Border/HR Color
 $main-bg-25: lighten($main-bg, 25%); 
 
@@ -62,10 +66,10 @@ $container-bg: $gray-1;
 $login-register-bg: $gray-1;
 $content-wrapper-bg: $gray-1;
 $header-image: none;
-$header-bg: transparentize(lighten($secondary, 18.5%), .25);
+$header-bg: $azul-usach; //transparentize(lighten($secondary, 18.5%), .25);
 $courseware-header-image: none;
-$courseware-header-bg: transparentize(lighten($secondary, 18.5%), .25);
-$footer-bg: $secondary-25;
+$courseware-header-bg: $azul-usach; //transparentize(lighten($secondary, 18.5%), .25);
+$footer-bg: $azul-usach; //$secondary-25;
 $courseware-footer-border: 1px solid $main-bg-60;
 $courseware-footer-shadow: box-shadow(2px 1px 0 rgba(0, 0, 0, .1));
 $courseware-footer-margin: 50px;
@@ -185,7 +189,7 @@ $footer_margin: ($baseline/4) 0;
 //-----------------
 //  CSS BG Images
 //-----------------
-$homepage-bg-image: url('../themes/udesantiagox-default-theme/images/sunrise.jpg');
+$homepage-bg-image: none; //url('../themes/udesantiagox-default-theme/images/sunrise.jpg');
 
 $login-banner-image: none;
 $register-banner-image: none;
@@ -206,3 +210,7 @@ $video-thumb-url: '../themes/udesantiagox-default-theme/images/edx.png';
     margin: 0 !important;
     text-align: right;
 }
+
+// importamos scss para la cabecera y footer (colores de los links)
+@import 'shared/header';
+@import 'shared/footer';
